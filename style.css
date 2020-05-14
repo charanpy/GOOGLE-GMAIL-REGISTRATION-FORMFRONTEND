@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin:0;
+}
+html{
+	font-size: 62.5%;
+}
+.container{
+	height: 120%;
+	width: 100%;
+	display: flex;
+	
+	justify-content: center;
+
+}
+.wrapper{
+	border:1px solid #ccc;
+	border-radius:5px;
+	margin-top: 2%;
+	width:60%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.left-container{
+	display: flex;
+	flex:0 0 60%;
+	
+}
+
+.account{
+	padding:6rem 4rem;
+}
+
+.google{
+	width: 77px;
+	height: 28px;
+}
+
+.account-create{
+
+	font-family:'Google Sans',arial,sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size:24px;
+	color:#202124;
+	margin:15px 0;
+}
+
+.gmail{
+	font-family: "Roboto Noto Sans",arial,sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	
+	word-spacing: 1px;
+}
+
+.input-group{
+	display: flex;
+	flex-direction: row;
+}
+
+.form{
+	margin-top: 30px;
+}
+
+.form-input1{
+	margin-right: 15px;
+}
+
+.input{
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	transition: all 500ms ease-in-out;
+}
+.input:focus::-webkit-input-placeholder{
+	opacity: 0;
+
+	
+
+}
+.input:focus{
+	
+border:1px solid #1a73e8;
+
+}
+.input:active{
+	border:1px solid #1a73e8;
+}
+.aligns{
+	position: relative;
+}
+.text{
+	position: absolute;
+	top:25%;
+	left: 5%;
+	font-size: 13px;
+	color:#1a73e8;
+	font-weight: 100;
+	font-family: "Roboto Noto Sans",arial,sans-serif;
+	opacity: 0;
+	visibility: hidden;
+	background-color: white;
+	transition: all 200ms ease-in-out;
+}
+.alert i {
+	margin-right:8px;
+}
+
+
+}
+.alert span{
+	margin-top:10px;
+	font-family:'Google Sans',arial,sans-serif;
+	font-weight: 500;
+	color:#d93025;
+	letter-spacing: .5px;
+	font-size:13px; 
+	
+}
+.form-input3{
+	margin-top: 30px;
+	width: 100%;
+}
+.input:focus + p{
+	transition: all 200ms ease-in-out;
+	top:-14%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.form-input3 input{
+	width: 95%;
+}
+
+
+
+.left{
+	margin-top: 30px;
+}
+.sign{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.sign a{
+	color:#1a73e8;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 15px;
+
+	font-family: 'Google Sans',arial,sans-serif;
+	font-weight: bold;
+	letter-spacing: .25px;
+	line-height: 36px;
+	padding: 6px 0;
+	position: relative;
+}
+
+.detail{
+	color: #202124;
+	font-family: 'Google Sans',arial,sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.btn{
+	padding:10px;
+	color:white;
+	font-family: 'Google Sans',arial,sans-serif;
+	border-radius: 5px;
+	background-color: #1a73e8;
+	cursor: pointer;
+	width:100px;
+	text-align: center;
+}
+.btn:hover{
+	background-color:#0069d9; 
+}
+
+
+.right-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.right-container span{
+	margin-top: 20px;
+	font-family: 'Google Sans',arial,sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.right-container span{
+	margin-top: 15px;
+	font-family: 'Google Sans',arial,sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#alerts{
+	display: none;
+}
+#alerts1{
+	display: none;
+}
+#alerts2{
+	display: none;
+}
+#alerts3{
+	display: none;
+}
+
+.one{
+	border:1px solid red;
+}
+
+@media(min-width: 1201px){
+	.wrapper{
+		margin-top: 30%;
+	}
+}
+
+
+@media(max-width:1200px){
+	.wrapper{
+		width:70%;
+	}
+
+}
+
+@media(max-width:1100px){
+	.wrapper{
+		width:80%;
+		margin-top: 30%;
+	}
+	.input:focus + p{
+		position: absolute;
+		top:-5%;
+
+	}
+
+
+
+	@media(max-width:900px){
+		.right-container{
+			display: none;
+
+		}
+		.wrapper{
+			width: 60%;
+			height: 100%;
+			margin-top: 30%;
+			border: none;
+
+
+		}
+
+		.container{
+			align-items: center;
+		}
+
+	}
+
+
+
+
+	@media(max-width: 750px){
+		.wrapper{
+			width:70%;
+		}
+		.right-container{
+			display: none;
+
+		}
+	}
+
+
+
+
+	@media(max-width: 600px){
+		.container{
+			width: 100%;
+			height: 100%;
+			align-items: flex-start;
+			justify-content: flex-start;
+
+		}
+		.wrapper{
+			width:100% !important;
+		}
+		.right-container{
+			display: none !important;
+
+		}
+		.input-group{
+			flex-direction: column;
+		}
+		.left-container{
+			flex:0 0 100%;
+		}
+		.input-group .input{
+			margin:20px 0;
+			width: 100%;
+		}
+		.input:focus + .c{
+			position: absolute;
+
+			top:11%;
+		}input:focus + .d{
+			position: absolute;
+
+			top:-8%;
+		}
+		
+		.btn{
+			margin-top: 10px;
+		}
+
+		.detail{
+			line-height: 1.5;
+		}
+	}
