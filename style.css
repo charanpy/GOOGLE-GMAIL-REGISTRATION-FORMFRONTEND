@@ -89,6 +89,9 @@ border:1px solid #1a73e8;
 .input:active{
 	border:1px solid #1a73e8;
 }
+.input:visited{   border:1px solid #1a73e8;
+}  }
+
 .aligns{
 	position: relative;
 }
